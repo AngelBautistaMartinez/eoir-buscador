@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Buscador de representantes acreditados — DOJ/EOIR{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <svg class="seal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <path d="M12 2.5 4.5 5.5v5.2c0 5 3.2 8.9 7.5 10.3 4.3-1.4 7.5-5.3 7.5-10.3V5.5L12 2.5Z" stroke-linejoin="round"/>
+        <path d="m8.5 12.2 2.4 2.4 4.6-4.9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="heading-group">
+        <a class="brand" href="{{ url_for('index') }}">Buscador de representantes acreditados</a>
+        <p class="subtitle">DOJ/EOIR — verifique antes de confiar</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    <p>Esta herramienta usa datos públicos del Departamento de Justicia (DOJ/EOIR).
+       No es un servicio del gobierno ni sustituye asesoría legal.
+       {% if data_as_of %}Datos actualizados al {{ data_as_of|fecha_es }}.{% endif %}</p>
+  </footer>
+</body>
+</html>

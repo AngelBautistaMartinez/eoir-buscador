@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}{{ record.name }} — Buscador de representantes acreditados{% endblock %}
+{% block content %}
+<a class="back-link" href="{{ url_for('index', q=query) }}">&larr; Volver a los resultados</a>
+
+<div class="record-card">
+  <h1>{{ record.name }}</h1>
+  <div class="badges">
+    {% if record.status == 'Active' %}
+      <span class="badge badge-active">Activo</span>
+    {% elif record.status %}
+      <span class="badge badge-neutral">{{ record.status }}</span>
+    {% endif %}
+    {% if record.pending_renewal %}<span class="badge badge-pending">Renovación pendiente</span>{% endif %}
+    {% if record.scope == 'DHS_ONLY' %}<span class="badge badge-neutral">Solo DHS</span>{% endif %}
+  </div>
+
+  {% if autorizado %}
+    <div class="auth-note auth-yes">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="m8.5 12.3 2.4 2.4 4.6-4.9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <p class="auth-headline">¿Puede ayudarle ahora? Sí.</p>
+        <p>Según el registro del DOJ/EOIR, esta persona está actualmente autorizada para representarle.</p>
+        {% if record.pending_renewal or record.org_pending_renewal %}
+          <p>Su renovación (o la de su organización) está en trámite, pero eso no le quita
+          validez: por ley (8 CFR 1292.16), sigue autorizada mientras EOIR revisa la solicitud.</p>
+        {% endif %}
+      </div>
+    </div>
+  {% else %}
+    <div class="auth-note auth-unknown">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M12 9v4M12 16.5h.01" stroke-linecap="round"/>
+        <path d="M10.6 3.9 2.9 17.5a1.6 1.6 0 0 0 1.4 2.4h15.4a1.6 1.6 0 0 0 1.4-2.4L13.4 3.9a1.6 1.6 0 0 0-2.8 0Z" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <p class="auth-headline">¿Puede ayudarle ahora? No pudimos confirmarlo.</p>
+        <p>Verifique directamente con la organización o con EOIR antes de continuar.</p>
+      </div>
+    </div>
+  {% endif %}
+
+  <dl class="record">
+    <dt>Alcance</dt>
+    <dd>{{ 'Solo DHS (no representa en corte)' if record.scope == 'DHS_ONLY' else 'Completo (corte y DHS)' }}</dd>
+
+    <dt>Estatus</dt>
+    <dd>{{ record.status or 'desconocido' }}</dd>
+
+    <dt>Vence</dt>
+    <dd>{{ record.expiration or 'sin fecha registrada' }}{% if record.pending_renewal %} (renovación pendiente){% endif %}</dd>
+
+    <dt>Organización</dt>
+    <dd>{{ record.org or 'sin organización registrada' }}</dd>
+
+    {% if record.org_city and record.org_state %}
+    <dt>Ubicación</dt>
+    <dd>{{ record.org_city }}, {{ record.org_state }}</dd>
+    {% endif %}
+
+    <dt>Teléfono</dt>
+    <dd>{{ record.org_phone or 'sin teléfono registrado' }}</dd>
+  </dl>
+</div>
+
+<p class="warning">Confirme que la organización y la ciudad coinciden con lo que le dijeron
+antes de continuar. Un nombre parecido no es suficiente.</p>
+{% endblock %}
