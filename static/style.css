@@ -88,6 +88,19 @@ a { color: var(--navy); }
   font-size: 0.92rem;
   letter-spacing: 0.02em;
 }
+.site-nav {
+  margin-left: auto;
+  flex: none;
+  padding-top: 0.2rem;
+}
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+}
+.site-nav a:hover { border-bottom-color: #fff; }
 
 /* ---------- layout ---------- */
 

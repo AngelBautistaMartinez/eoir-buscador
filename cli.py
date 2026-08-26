@@ -61,7 +61,7 @@ def print_full_record(r):
     print(f"Organización:  {r.get('org') or 'sin organización registrada'}")
     if r.get("org_city") and r.get("org_state"):
         print(f"Ubicación:     {r['org_city']}, {r['org_state']}")
-    print(f"Teléfono:      {r.get('org_phone') or 'sin teléfono registrado'}")
+    print(f"Tel. de la organización: {r.get('org_phone') or 'sin teléfono registrado'}")
     print()
     if is_currently_authorized(r):
         print("¿Puede ayudarle ahora?  SÍ — según el registro del DOJ/EOIR, esta persona")
