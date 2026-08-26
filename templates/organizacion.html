@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Buscar organización — Buscador de representantes acreditados{% endblock %}
+{% block content %}
+<a class="back-link" href="{{ url_for('index') }}">&larr; Buscar por persona</a>
+
+{% if not query %}
+<section class="intro">
+  <p>Busque el nombre de una organización para ver si está reconocida por el
+  DOJ/EOIR, y quiénes son sus representantes acreditados.</p>
+</section>
+{% endif %}
+
+<div class="search-card">
+  <form class="search-form" action="{{ url_for('organizacion') }}" method="get">
+    <label for="q">Buscar organización</label>
+    <div class="input-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"/>
+        <path d="m21 21-4.3-4.3" stroke-linecap="round"/>
+      </svg>
+      <input type="text" id="q" name="q" value="{{ query }}" placeholder="Ej. Catholic Charities" autofocus>
+    </div>
+    <button type="submit">Buscar</button>
+  </form>
+</div>
+
+{% if query %}
+  {% if result.status == 'too_short' %}
+    <p class="notice">'{{ query }}' es muy corto para buscar. Escriba al menos 3 letras.</p>
+
+  {% elif result.status == 'none' %}
+    <p class="notice">No encontramos ninguna organización acreditada parecida a
+    '{{ query }}'. Esto NO es prueba de que sea un fraude — puede haber un error
+    de escritura, o la organización puede operar bajo otro nombre.</p>
+
+  {% elif result.status == 'candidates' %}
+    <p>{{ result.count }} posible(s) coincidencia(s):</p>
+    <ul class="org-list">
+      {% for item in results %}
+        <li>
+          <div class="org-name">{{ item.org }}</div>
+          {% if item.location %}
+            <div class="org-loc">{{ item.location.org_city }}, {{ item.location.org_state }}</div>
+            {% if item.location.org_phone %}
+              <div class="org-phone">{{ item.location.org_phone }}</div>
+            {% endif %}
+          {% endif %}
+          <ul class="org-reps">
+            {% for entry in item.reps %}
+              <li>
+                <span class="rep-name">{{ entry.record.name }}</span>
+                {% if entry.autorizado %}
+                  <span class="badge badge-active">Activo</span>
+                {% elif entry.record.status %}
+                  <span class="badge badge-neutral">{{ entry.record.status }}</span>
+                {% endif %}
+                {% if entry.record.pending_renewal %}
+                  <span class="badge badge-pending">Renovación pendiente</span>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+    <p class="warning">Confirme siempre que la persona con la que habla trabaje
+    actualmente para la organización antes de compartir información o pagar por servicios.</p>
+  {% endif %}
+{% endif %}
+{% endblock %}

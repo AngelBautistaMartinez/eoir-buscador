@@ -15,7 +15,7 @@ import os
 
 from flask import Flask, render_template, request, abort
 
-from search import search, nearby_orgs, get_data_as_of
+from search import search, search_org, nearby_orgs, get_data_as_of
 
 FIND_LEGAL_SERVICES_URL = "https://www.uscis.gov/scams-fraud-and-misconduct/avoid-scams/find-legal-services"
 
@@ -87,6 +87,36 @@ def representante():
         record=record,
         query=query,
         autorizado=is_currently_authorized(record),
+    )
+
+
+@app.route("/organizacion")
+def organizacion():
+    query = request.args.get("q", "").strip()
+    result = search_org(query) if query else None
+
+    results = None
+    if result and result["status"] == "candidates":
+        results = []
+        for item in result["results"]:
+            reps = item["reps"]
+            location = next(
+                (r for r in reps if r.get("org_city") and r.get("org_state")), None
+            )
+            results.append({
+                "org": item["org"],
+                "location": location,
+                "reps": [
+                    {"record": r, "autorizado": is_currently_authorized(r)}
+                    for r in reps
+                ],
+            })
+
+    return render_template(
+        "organizacion.html",
+        query=query,
+        result=result,
+        results=results,
     )
 
 

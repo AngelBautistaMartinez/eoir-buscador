@@ -25,6 +25,7 @@
     <button type="submit">Buscar</button>
   </form>
 </div>
+<a class="search-alt" href="{{ url_for('organizacion') }}">¿Busca una organización en vez de una persona?</a>
 
 {% if query %}
   {% if result.status == 'too_short' %}

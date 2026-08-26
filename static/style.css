@@ -293,6 +293,30 @@ button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .org-loc { color: var(--muted); font-size: 0.92rem; margin-top: 0.15rem; }
 .org-phone { font-size: 0.92rem; margin-top: 0.15rem; }
 
+.org-reps {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  border-top: 1px solid var(--line);
+}
+.org-reps li {
+  padding: 0.5rem 0 0.5rem 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.org-reps li:last-child { border-bottom: none; }
+.org-reps .rep-name { font-size: 0.94rem; }
+
+/* find-a-different-search-type link under the main search form */
+.search-alt {
+  display: block;
+  margin: -1.25rem 0 1.75rem;
+  font-size: 0.88rem;
+}
+
 /* ---------- record detail ---------- */
 
 .back-link {
