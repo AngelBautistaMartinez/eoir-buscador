@@ -50,6 +50,14 @@ def inject_data_as_of():
     return {"data_as_of": get_data_as_of()}
 
 
+@app.after_request
+def set_security_headers(response):
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    return response
+
+
 @app.route("/")
 def index():
     query = request.args.get("q", "").strip()
