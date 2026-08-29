@@ -1,40 +1,37 @@
 {% extends "base.html" %}
-{% block title %}Buscar organización — Buscador de representantes acreditados{% endblock %}
+{% block title %}{{ t('title_org_search') }} — {{ t('brand') }}{% endblock %}
 {% block content %}
-<a class="back-link" href="{{ url_for('index') }}">&larr; Buscar por persona</a>
+<a class="back-link" href="{{ url_for('index') }}">&larr; {{ t('back_to_person_search') }}</a>
 
 {% if not query %}
 <section class="intro">
-  <p>Busque el nombre de una organización para ver si está reconocida por el
-  DOJ/EOIR, y quiénes son sus representantes acreditados.</p>
+  <p>{{ t('org_intro') }}</p>
 </section>
 {% endif %}
 
 <div class="search-card">
   <form class="search-form" action="{{ url_for('organizacion') }}" method="get">
-    <label for="q">Buscar organización</label>
+    <label for="q">{{ t('search_org_label') }}</label>
     <div class="input-wrap">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <circle cx="11" cy="11" r="7"/>
         <path d="m21 21-4.3-4.3" stroke-linecap="round"/>
       </svg>
-      <input type="text" id="q" name="q" value="{{ query }}" placeholder="Ej. Catholic Charities" autofocus>
+      <input type="text" id="q" name="q" value="{{ query }}" placeholder="{{ t('search_org_placeholder') }}" autofocus>
     </div>
-    <button type="submit">Buscar</button>
+    <button type="submit">{{ t('search_button') }}</button>
   </form>
 </div>
 
 {% if query %}
   {% if result.status == 'too_short' %}
-    <p class="notice">'{{ query }}' es muy corto para buscar. Escriba al menos 3 letras.</p>
+    <p class="notice">{{ t('too_short').format(query=query) }}</p>
 
   {% elif result.status == 'none' %}
-    <p class="notice">No encontramos ninguna organización acreditada parecida a
-    '{{ query }}'. Esto NO es prueba de que sea un fraude — puede haber un error
-    de escritura, o la organización puede operar bajo otro nombre.</p>
+    <p class="notice">{{ t('org_none').format(query=query) }}</p>
 
   {% elif result.status == 'candidates' %}
-    <p>{{ result.count }} posible(s) coincidencia(s):</p>
+    <p>{{ t('results_count').format(count=result.count) }}</p>
     <ul class="org-list">
       {% for item in results %}
         <li>
@@ -50,12 +47,12 @@
               <li>
                 <span class="rep-name">{{ entry.record.name }}</span>
                 {% if entry.autorizado %}
-                  <span class="badge badge-active">Activo</span>
+                  <span class="badge badge-active">{{ t('badge_active') }}</span>
                 {% elif entry.record.status %}
                   <span class="badge badge-neutral">{{ entry.record.status }}</span>
                 {% endif %}
                 {% if entry.record.pending_renewal %}
-                  <span class="badge badge-pending">Renovación pendiente</span>
+                  <span class="badge badge-pending">{{ t('badge_pending') }}</span>
                 {% endif %}
               </li>
             {% endfor %}
@@ -63,8 +60,7 @@
         </li>
       {% endfor %}
     </ul>
-    <p class="warning">Confirme siempre que la persona con la que habla trabaje
-    actualmente para la organización antes de compartir información o pagar por servicios.</p>
+    <p class="warning">{{ t('confirm_still_employed_warning') }}</p>
   {% endif %}
 {% endif %}
 {% endblock %}

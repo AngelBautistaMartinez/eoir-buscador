@@ -1,18 +1,18 @@
 {% extends "base.html" %}
-{% block title %}{{ record.name }} — Buscador de representantes acreditados{% endblock %}
+{% block title %}{{ record.name }} — {{ t('brand') }}{% endblock %}
 {% block content %}
-<a class="back-link" href="{{ url_for('index', q=query) }}">&larr; Volver a los resultados</a>
+<a class="back-link" href="{{ url_for('index', q=query) }}">&larr; {{ t('back_to_results') }}</a>
 
 <div class="record-card">
   <h1>{{ record.name }}</h1>
   <div class="badges">
     {% if record.status == 'Active' %}
-      <span class="badge badge-active">Activo</span>
+      <span class="badge badge-active">{{ t('badge_active') }}</span>
     {% elif record.status %}
       <span class="badge badge-neutral">{{ record.status }}</span>
     {% endif %}
-    {% if record.pending_renewal %}<span class="badge badge-pending">Renovación pendiente</span>{% endif %}
-    {% if record.scope == 'DHS_ONLY' %}<span class="badge badge-neutral">Solo DHS</span>{% endif %}
+    {% if record.pending_renewal %}<span class="badge badge-pending">{{ t('badge_pending') }}</span>{% endif %}
+    {% if record.scope == 'DHS_ONLY' %}<span class="badge badge-neutral">{{ t('badge_dhs_only') }}</span>{% endif %}
   </div>
 
   {% if autorizado %}
@@ -22,11 +22,10 @@
         <path d="m8.5 12.3 2.4 2.4 4.6-4.9" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <div>
-        <p class="auth-headline">¿Puede ayudarle ahora? Sí.</p>
-        <p>Según el registro del DOJ/EOIR, esta persona está actualmente autorizada para representarle.</p>
+        <p class="auth-headline">{{ t('auth_yes_headline') }}</p>
+        <p>{{ t('auth_yes_body') }}</p>
         {% if record.pending_renewal or record.org_pending_renewal %}
-          <p>Su renovación (o la de su organización) está en trámite, pero eso no le quita
-          validez: por ley (8 CFR 1292.16), sigue autorizada mientras EOIR revisa la solicitud.</p>
+          <p>{{ t('auth_yes_pending_note') }}</p>
         {% endif %}
       </div>
     </div>
@@ -37,35 +36,34 @@
         <path d="M10.6 3.9 2.9 17.5a1.6 1.6 0 0 0 1.4 2.4h15.4a1.6 1.6 0 0 0 1.4-2.4L13.4 3.9a1.6 1.6 0 0 0-2.8 0Z" stroke-linejoin="round"/>
       </svg>
       <div>
-        <p class="auth-headline">¿Puede ayudarle ahora? No pudimos confirmarlo.</p>
-        <p>Verifique directamente con la organización o con EOIR antes de continuar.</p>
+        <p class="auth-headline">{{ t('auth_unknown_headline') }}</p>
+        <p>{{ t('auth_unknown_body') }}</p>
       </div>
     </div>
   {% endif %}
 
   <dl class="record">
-    <dt>Alcance</dt>
-    <dd>{{ 'Solo DHS (no representa en corte)' if record.scope == 'DHS_ONLY' else 'Completo (corte y DHS)' }}</dd>
+    <dt>{{ t('label_scope') }}</dt>
+    <dd>{{ t('scope_dhs_only_desc') if record.scope == 'DHS_ONLY' else t('scope_full_desc') }}</dd>
 
-    <dt>Estatus</dt>
-    <dd>{{ record.status or 'desconocido' }}</dd>
+    <dt>{{ t('label_status') }}</dt>
+    <dd>{{ record.status or t('status_unknown') }}</dd>
 
-    <dt>Vence</dt>
-    <dd>{{ record.expiration or 'sin fecha registrada' }}{% if record.pending_renewal %} (renovación pendiente){% endif %}</dd>
+    <dt>{{ t('label_expires') }}</dt>
+    <dd>{{ record.expiration or t('no_expiration_on_file') }}{% if record.pending_renewal %}{{ t('pending_renewal_suffix') }}{% endif %}</dd>
 
-    <dt>Organización</dt>
-    <dd>{{ record.org or 'sin organización registrada' }}</dd>
+    <dt>{{ t('label_org') }}</dt>
+    <dd>{{ record.org or t('no_org_on_file') }}</dd>
 
     {% if record.org_city and record.org_state %}
-    <dt>Ubicación</dt>
+    <dt>{{ t('label_location') }}</dt>
     <dd>{{ record.org_city }}, {{ record.org_state }}</dd>
     {% endif %}
 
-    <dt>Teléfono de la organización</dt>
-    <dd>{{ record.org_phone or 'sin teléfono registrado' }}</dd>
+    <dt>{{ t('label_org_phone') }}</dt>
+    <dd>{{ record.org_phone or t('no_phone_on_file') }}</dd>
   </dl>
 </div>
 
-<p class="warning">Confirme que la organización y la ciudad coinciden con lo que le dijeron
-antes de continuar. Un nombre parecido no es suficiente.</p>
+<p class="warning">{{ t('confirm_org_city_warning') }}</p>
 {% endblock %}

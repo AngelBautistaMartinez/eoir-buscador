@@ -1,6 +1,111 @@
 {% extends "base.html" %}
-{% block title %}Consejos — Buscador de representantes acreditados{% endblock %}
+{% block title %}{{ t('nav_consejos') }} — {{ t('brand') }}{% endblock %}
 {% block content %}
+{% if lang == 'en' %}
+
+<h1>Tips to protect yourself from immigration fraud</h1>
+
+<section class="intro">
+  <p>These are real scams happening right now, not just general warnings. We built
+  this list from USCIS, the FTC, and recent reporting on how scammers are actually
+  operating in 2026 — and we show you how to use this site itself to verify before
+  you trust someone.</p>
+</section>
+
+<p class="warning">
+  <strong>The golden rule:</strong> if someone contacted you first (a call, a text,
+  social media) and asks you to act fast or pay to avoid something bad, stop right
+  there. No real immigration process depends on a single phone call or on you
+  deciding in minutes.
+</p>
+
+<h2>A "notario" is not a lawyer in the United States</h2>
+<p>In many Latin American countries, a "notario público" is an attorney with legal
+training. In the United States, a "notary public" can only witness signatures — they
+can't give you legal advice or represent you before immigration authorities. Only a
+licensed attorney, or a DOJ-accredited representative working for a recognized
+organization, can do that. That's exactly what this site helps you verify.</p>
+
+<h2>Watch out on social media</h2>
+<ul>
+  <li>Scammers build Facebook, Instagram, or WhatsApp pages that copy the name,
+  photos, and logo of real attorneys and organizations (even well-known ones) —
+  they can look identical to the real thing and have thousands of bought followers.</li>
+  <li>Some now use AI-generated video to fake a video call with a "lawyer," or even a
+  fake court hearing, with people dressed as a judge or officer and official-looking
+  fake documents.</li>
+  <li>A paid ad is no guarantee of anything — anyone can pay for advertising.</li>
+</ul>
+
+<h2>No one from immigration is going to call or text you like this</h2>
+<ul>
+  <li>The government doesn't initiate contact by call, text, email, or social media to
+  ask for money, threaten you with arrest, or ask you to scan a QR code. If caller ID
+  shows "USCIS" or "U.S. Government," that's easy to fake — it's not proof of anything.</li>
+  <li>A real government email or website ends in <strong>.gov</strong>. If it doesn't
+  end in .gov, it's not part of the federal government, even if it uses a name like
+  "U.S. Immigration Services" or flag imagery.</li>
+  <li>USCIS never asks you to pay over the phone, and doesn't accept gift cards,
+  Zelle, Cash App, cryptocurrency, Western Union, or MoneyGram. The only official
+  payment method is through your account at uscis.gov or Pay.gov.</li>
+</ul>
+
+<h2>If someone tells you a family member has been detained</h2>
+<p>A common scam: you get a call saying a family member has been detained and that
+you need to pay immediately — cash, wire transfer, or crypto — to "release them" or
+"stop an arrest warrant." It's designed to make you act on fear before you think.
+Before paying anything, verify the detention yourself through the
+<a href="https://locator.ice.gov" target="_blank" rel="noopener">ICE Online Detainee
+Locator (locator.ice.gov)</a> and find a real attorney or accredited representative —
+don't use the phone number the caller gave you.</p>
+
+<h2>Before you sign or pay for anything</h2>
+<ul>
+  <li>Never sign a blank form, or one with false information — even if someone you
+  trust asks you to.</li>
+  <li>Official USCIS forms are free. If someone charges you for a form, that's a scam.</li>
+  <li>Don't pay anything for a new program (for example, a TPS re-registration)
+  before the government publishes official instructions — if it's recent news, wait
+  for the official notice, not the one from whoever contacted you first.</li>
+  <li>Ask for a written contract, receipts, and copies of everything filed on your
+  behalf. Keep them.</li>
+  <li>Don't let anyone keep your original documents.</li>
+</ul>
+
+<h2>How to verify someone</h2>
+<ul>
+  <li><strong>Right here:</strong> search the person's name <em>and</em> their
+  organization's name separately. If the organization exists but the person doesn't
+  show up in its list of representatives — or the other way around — that's a red flag.</li>
+  <li>If they claim to be an attorney, verify their license with your state's bar
+  association, or check the American Immigration Lawyers Association directory
+  (ailalawyer.com).</li>
+  <li>Call the organization using a number you find yourself (looking it up on your
+  own), never the number the person who contacted you gave you.</li>
+</ul>
+
+<h2>If something doesn't add up, or you've already been a victim</h2>
+<ul>
+  <li><strong>Save evidence now:</strong> screenshot the profile, ad, or message
+  before it disappears — many scammers delete everything as soon as someone starts
+  asking questions.</li>
+  <li>Report the fraud at <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener">reportfraud.ftc.gov</a>.
+  Reporting it does not affect your immigration case.</li>
+  <li>For free or low-cost legal help near you, call <strong>211</strong> (a free
+  community-services line in the U.S.) or use this site's
+  <a href="{{ url_for('index') }}">person search</a> and
+  <a href="{{ url_for('organizacion') }}">organization search</a>.</li>
+</ul>
+
+<p class="warning">
+  Even a well-meaning friend or family member is not a substitute for an attorney or
+  an accredited representative — they can help you translate or fill out a form, but
+  they're not trained to give legal advice, and a good-faith mistake can damage your
+  case just as much as a bad-faith one.
+</p>
+
+{% else %}
+
 <h1>Consejos para protegerse de fraudes de inmigración</h1>
 
 <section class="intro">
@@ -113,4 +218,6 @@ la persona que llamó.</p>
   formulario, pero no están capacitados para darle consejo legal, y un error
   de buena fe puede dañar su caso igual que uno de mala fe.
 </p>
+
+{% endif %}
 {% endblock %}

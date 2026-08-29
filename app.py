@@ -12,10 +12,12 @@ Need:        pip install -r requirements.txt
 """
 
 import os
+from urllib.parse import urlencode
 
-from flask import Flask, render_template, request, abort
+from flask import Flask, render_template, request, abort, g
 
 from search import search, search_org, nearby_orgs, get_data_as_of
+from i18n import SUPPORTED_LANGS, DEFAULT_LANG, t
 
 FIND_LEGAL_SERVICES_URL = "https://www.uscis.gov/scams-fraud-and-misconduct/avoid-scams/find-legal-services"
 
@@ -23,8 +25,39 @@ MESES_ES = [
     "enero", "febrero", "marzo", "abril", "mayo", "junio",
     "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre",
 ]
+MESES_EN = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+]
 
 app = Flask(__name__)
+
+
+def format_date(iso_date, lang):
+    if not iso_date:
+        return None
+    y, m, d = (int(p) for p in iso_date.split("-"))
+    if lang == "en":
+        return f"{MESES_EN[m - 1]} {d}, {y}"
+    return f"{d} de {MESES_ES[m - 1]} de {y}"
+
+
+@app.before_request
+def set_lang():
+    lang = request.args.get("lang")
+    if lang not in SUPPORTED_LANGS:
+        lang = request.cookies.get("lang")
+    if lang not in SUPPORTED_LANGS:
+        lang = DEFAULT_LANG
+    g.lang = lang
+
+
+def lang_switch_url(new_lang):
+    """Current path with `lang` swapped — not url_for(request.endpoint, ...),
+    since request.endpoint is None on a 404/unmatched route."""
+    args = request.args.to_dict(flat=True)
+    args["lang"] = new_lang
+    return f"{request.path}?{urlencode(args)}"
 
 
 def is_currently_authorized(r):
@@ -37,21 +70,25 @@ def is_currently_authorized(r):
     return r.get("status") == "Active" and r.get("org_status") == "Active"
 
 
-@app.template_filter("fecha_es")
-def format_date_es(iso_date):
-    if not iso_date:
-        return None
-    y, m, d = (int(p) for p in iso_date.split("-"))
-    return f"{d} de {MESES_ES[m - 1]} de {y}"
-
-
 @app.context_processor
-def inject_data_as_of():
-    return {"data_as_of": get_data_as_of()}
+def inject_i18n():
+    return {
+        "lang": g.lang,
+        "t": lambda key: t(g.lang, key),
+        "lang_switch_url": lang_switch_url,
+        "data_as_of_line": (
+            t(g.lang, "footer_updated").format(date=format_date(get_data_as_of(), g.lang))
+            if get_data_as_of() else None
+        ),
+    }
 
 
 @app.after_request
 def set_security_headers(response):
+    if request.args.get("lang") in SUPPORTED_LANGS:
+        response.set_cookie(
+            "lang", g.lang, max_age=60 * 60 * 24 * 365, samesite="Lax"
+        )
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["X-Frame-Options"] = "DENY"
     response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
@@ -137,8 +174,8 @@ def consejos():
 def not_found(e):
     return render_template(
         "error.html",
-        title="Página no encontrada",
-        message="No encontramos esa página. Puede que el enlace esté mal escrito o haya caducado.",
+        title=t(g.lang, "error_404_title"),
+        message=t(g.lang, "error_404_message"),
     ), 404
 
 
@@ -146,8 +183,8 @@ def not_found(e):
 def server_error(e):
     return render_template(
         "error.html",
-        title="Error del servidor",
-        message="Ocurrió un error inesperado de nuestra parte. Intente de nuevo en unos minutos.",
+        title=t(g.lang, "error_500_title"),
+        message=t(g.lang, "error_500_message"),
     ), 500
 
 

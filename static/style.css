@@ -93,6 +93,9 @@ a { color: var(--navy); }
   margin-left: auto;
   flex: none;
   padding-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
 }
 .site-nav a {
   color: #fff;
@@ -102,6 +105,21 @@ a { color: var(--navy); }
   border-bottom: 1px solid rgba(255, 255, 255, 0.45);
 }
 .site-nav a:hover { border-bottom-color: #fff; }
+.lang-switch {
+  font-size: 0.8rem;
+  color: #c3d3e2;
+}
+.lang-switch a {
+  color: #c3d3e2;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(195, 211, 226, 0.5);
+}
+.lang-switch a:hover { color: #fff; border-bottom-color: #fff; }
+.lang-switch [aria-current] {
+  color: #fff;
+  font-weight: 700;
+}
 
 /* ---------- layout ---------- */
 

@@ -2,67 +2,57 @@
 {% block content %}
 {% if not query %}
 <section class="intro">
-  <p>Esta herramienta le ayuda a verificar, en segundos, si la persona u organización
-  que le ofrece ayuda con su caso de inmigración está realmente autorizada por el
-  gobierno de EE. UU. para hacerlo.</p>
-  <p><strong>No es un sitio del gobierno, de inmigración ni de ninguna agencia.</strong>
-  Es un proyecto independiente y gratuito, hecho para proteger a la comunidad — no para
-  vigilarla.</p>
-  <p>No necesita crear una cuenta. No le pedimos su nombre ni su información migratoria.
-  No guardamos lo que usted busca.</p>
+  <p>{{ t('intro_p1') }}</p>
+  <p>{{ t('intro_p2')|safe }}</p>
+  <p>{{ t('intro_p3') }}</p>
 </section>
 {% endif %}
 <div class="search-card">
   <form class="search-form" action="{{ url_for('index') }}" method="get">
-    <label for="q">Buscar por nombre</label>
+    <label for="q">{{ t('search_label') }}</label>
     <div class="input-wrap">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <circle cx="11" cy="11" r="7"/>
         <path d="m21 21-4.3-4.3" stroke-linecap="round"/>
       </svg>
-      <input type="text" id="q" name="q" value="{{ query }}" placeholder="Ej. Juan García" autofocus>
+      <input type="text" id="q" name="q" value="{{ query }}" placeholder="{{ t('search_placeholder') }}" autofocus>
     </div>
-    <button type="submit">Buscar</button>
+    <button type="submit">{{ t('search_button') }}</button>
   </form>
 </div>
-<a class="search-alt" href="{{ url_for('organizacion') }}">¿Busca una organización en vez de una persona?</a>
+<a class="search-alt" href="{{ url_for('organizacion') }}">{{ t('search_alt_org') }}</a>
 
 {% if query %}
   {% if result.status == 'too_short' %}
-    <p class="notice">'{{ query }}' es muy corto para buscar. Escriba al menos 3 letras.</p>
+    <p class="notice">{{ t('too_short').format(query=query) }}</p>
 
   {% elif result.status == 'too_many' %}
-    <p class="notice">Buscó solo un apellido. Encontramos {{ result.count }} personas con el
-    apellido '{{ query }}'. Agregue un nombre de pila o una ciudad para reducir la búsqueda.</p>
+    <p class="notice">{{ t('too_many').format(count=result.count, query=query) }}</p>
 
   {% elif result.status == 'none' %}
     <section class="not-found">
-      <p>No encontramos a nadie parecido a '{{ query }}' en la lista de representantes
-      acreditados por el DOJ/EOIR.</p>
+      <p>{{ t('none_person').format(query=query) }}</p>
 
-      <p><strong>Esto NO es prueba de que sea un fraude.</strong> Puede pasar que:</p>
+      <p><strong>{{ t('not_fraud_proof') }}</strong></p>
       <ul>
-        <li>Sea un abogado o abogada con licencia — los abogados no necesitan estar
-          acreditados por el DOJ/EOIR, solo los representantes que no son abogados.
-          Verifique su licencia con el colegio de abogados (State Bar) de su estado.</li>
-        <li>Haya un error de escritura en el nombre que buscó.</li>
-        <li>La persona use un nombre distinto al que está registrado.</li>
+        <li>{{ t('reason_licensed_attorney') }}</li>
+        <li>{{ t('reason_typo') }}</li>
+        <li>{{ t('reason_diff_name') }}</li>
       </ul>
 
-      <p>Para verificar si alguien es abogado con licencia, o para encontrar ayuda legal
-      gratuita o de bajo costo, consulte el recurso oficial de USCIS:</p>
+      <p>{{ t('find_legal_help_intro') }}</p>
       <p><a class="legal-link" href="{{ legal_services_url }}" target="_blank" rel="noopener">{{ legal_services_url }}</a></p>
 
       <form class="location-form" action="{{ url_for('index') }}" method="get">
         <input type="hidden" name="q" value="{{ query }}">
-        <label for="ubicacion">¿En qué ciudad o estado vive?</label>
-        <input type="text" id="ubicacion" name="ubicacion" value="{{ ubicacion }}" placeholder="Ej. San Diego o California">
-        <button type="submit">Buscar organizaciones cercanas</button>
+        <label for="ubicacion">{{ t('location_question') }}</label>
+        <input type="text" id="ubicacion" name="ubicacion" value="{{ ubicacion }}" placeholder="{{ t('location_placeholder') }}">
+        <button type="submit">{{ t('location_button') }}</button>
       </form>
 
       {% if nearby is not none %}
         {% if nearby %}
-          <h2>Organizaciones acreditadas cerca de '{{ ubicacion }}'</h2>
+          <h2>{{ t('nearby_heading').format(ubicacion=ubicacion) }}</h2>
           <ul class="org-list">
             {% for org in nearby %}
               <li>
@@ -72,16 +62,15 @@
               </li>
             {% endfor %}
           </ul>
-          <p class="warning">Confirme siempre que la persona con la que habla trabaje
-          actualmente para la organización antes de compartir información o pagar por servicios.</p>
+          <p class="warning">{{ t('confirm_still_employed_warning') }}</p>
         {% else %}
-          <p class="notice">No encontramos organizaciones acreditadas registradas cerca de '{{ ubicacion }}'.</p>
+          <p class="notice">{{ t('nearby_none').format(ubicacion=ubicacion) }}</p>
         {% endif %}
       {% endif %}
     </section>
 
   {% elif result.status == 'candidates' %}
-    <p>{{ result.count }} posible(s) coincidencia(s):</p>
+    <p>{{ t('results_count').format(count=result.count) }}</p>
     <ul class="results-list">
       {% for item in result.results %}
         {% set r = item.record %}
@@ -90,7 +79,7 @@
             <div class="result-text">
               <span class="result-name">{{ r.name }}</span>
               <div class="result-meta">
-                {{ r.org or '(sin organización registrada)' }}
+                {{ r.org or t('no_org_registered') }}
                 {% if r.org_city and r.org_state %} — {{ r.org_city }}, {{ r.org_state }}{% endif %}
               </div>
             </div>

@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% block title %}{{ title }} — Buscador de representantes acreditados{% endblock %}
+{% block title %}{{ title }} — {{ t('brand') }}{% endblock %}
 {% block content %}
 <section class="not-found">
   <p>{{ message }}</p>
-  <p><a class="back-link" href="{{ url_for('index') }}">&larr; Volver a la búsqueda</a></p>
+  <p><a class="back-link" href="{{ url_for('index') }}">&larr; {{ t('back_to_search') }}</a></p>
 </section>
 {% endblock %}

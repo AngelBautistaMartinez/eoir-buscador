@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="es">
+<html lang="{{ lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}Buscador de representantes acreditados — DOJ/EOIR{% endblock %}</title>
-  <meta name="description" content="{% block description %}Verifique gratis si una persona u organización está acreditada por el DOJ/EOIR para ayudarle con su caso de inmigración. Gratis, sin cuentas, sin datos guardados.{% endblock %}">
+  <title>{% block title %}{{ t('brand') }} — DOJ/EOIR{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ t('meta_description') }}{% endblock %}">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_US">
-  <meta property="og:site_name" content="Buscador de representantes acreditados">
+  <meta property="og:locale" content="{{ 'en_US' if lang == 'en' else 'es_US' }}">
+  <meta property="og:site_name" content="{{ t('brand') }}">
   <meta property="og:title" content="{{ self.title() }}">
   <meta property="og:description" content="{{ self.description() }}">
   <meta property="og:url" content="{{ request.url }}">
@@ -23,11 +23,18 @@
         <path d="m8.5 12.2 2.4 2.4 4.6-4.9" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <div class="heading-group">
-        <a class="brand" href="{{ url_for('index') }}">Buscador de representantes acreditados</a>
-        <p class="subtitle">DOJ/EOIR — verifique antes de confiar</p>
+        <a class="brand" href="{{ url_for('index') }}">{{ t('brand') }}</a>
+        <p class="subtitle">{{ t('subtitle') }}</p>
       </div>
       <nav class="site-nav">
-        <a href="{{ url_for('consejos') }}">Consejos</a>
+        <a href="{{ url_for('consejos') }}">{{ t('nav_consejos') }}</a>
+        <span class="lang-switch">
+          {% if lang == 'es' %}
+            <span aria-current="true">Español</span> · <a href="{{ lang_switch_url('en') }}">English</a>
+          {% else %}
+            <a href="{{ lang_switch_url('es') }}">Español</a> · <span aria-current="true">English</span>
+          {% endif %}
+        </span>
       </nav>
     </div>
   </header>
@@ -35,9 +42,8 @@
     {% block content %}{% endblock %}
   </main>
   <footer class="site-footer">
-    <p>Esta herramienta usa datos públicos del Departamento de Justicia (DOJ/EOIR).
-       No es un servicio del gobierno ni sustituye asesoría legal.
-       {% if data_as_of %}Datos actualizados al {{ data_as_of|fecha_es }}.{% endif %}</p>
+    <p>{{ t('footer_intro') }}
+       {% if data_as_of_line %}{{ data_as_of_line }}{% endif %}</p>
   </footer>
 </body>
 </html>
