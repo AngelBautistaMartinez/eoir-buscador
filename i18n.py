@@ -23,9 +23,11 @@ STRINGS = {
         "footer_updated": "Datos actualizados al {date}.",
 
         # index.html
-        "intro_p1": "Esta herramienta le ayuda a verificar, en segundos, si la persona u organización que le ofrece ayuda con su caso de inmigración está realmente autorizada por el gobierno de EE. UU. para hacerlo.",
-        "intro_p2": "<strong>No es un sitio del gobierno, de inmigración ni de ninguna agencia.</strong> Es un proyecto independiente y gratuito, hecho para proteger a la comunidad — no para vigilarla.",
-        "intro_p3": "No necesita crear una cuenta. No le pedimos su nombre ni su información migratoria. No guardamos lo que usted busca.",
+        "hero_headline": "Verifique <em>antes</em> de confiar.",
+        "hero_lede": "Compruebe en segundos si la persona u organización que le ofrece ayuda con su caso de inmigración está realmente autorizada por el gobierno de EE. UU.",
+        "trust_independent": "Independiente, no es del gobierno",
+        "trust_privacy": "Sin cuentas, nada guardado",
+        "trust_free": "Gratis, siempre",
         "search_label": "Buscar por nombre",
         "search_placeholder": "Ej. Juan García",
         "search_button": "Buscar",
@@ -44,7 +46,7 @@ STRINGS = {
         "nearby_heading": "Organizaciones acreditadas cerca de '{ubicacion}'",
         "nearby_none": "No encontramos organizaciones acreditadas registradas cerca de '{ubicacion}'.",
         "confirm_still_employed_warning": "Confirme siempre que la persona con la que habla trabaje actualmente para la organización antes de compartir información o pagar por servicios.",
-        "results_count": "{count} posible(s) coincidencia(s):",
+        "results_count": "{count} posible(s) coincidencia(s)",
         "no_org_registered": "(sin organización registrada)",
 
         # representante.html
@@ -97,9 +99,11 @@ STRINGS = {
         "footer_updated": "Data last updated {date}.",
 
         # index.html
-        "intro_p1": "This tool helps you verify, in seconds, whether the person or organization offering to help with your immigration case is actually authorized by the U.S. government to do so.",
-        "intro_p2": "<strong>This is not a government, immigration, or agency website.</strong> It's an independent, free project made to protect the community — not to watch it.",
-        "intro_p3": "You don't need to create an account. We don't ask for your name or immigration information. We don't save what you search.",
+        "hero_headline": "Verify <em>before</em> you trust.",
+        "hero_lede": "Check in seconds whether the person or organization offering to help with your immigration case is actually authorized by the U.S. government to do so.",
+        "trust_independent": "Independent, not government",
+        "trust_privacy": "No accounts, nothing saved",
+        "trust_free": "Free, always",
         "search_label": "Search by name",
         "search_placeholder": "e.g. Juan García",
         "search_button": "Search",
@@ -118,7 +122,7 @@ STRINGS = {
         "nearby_heading": "Accredited organizations near '{ubicacion}'",
         "nearby_none": "We didn't find any accredited organizations on file near '{ubicacion}'.",
         "confirm_still_employed_warning": "Always confirm that the person you're speaking with currently works for the organization before sharing information or paying for services.",
-        "results_count": "{count} possible match(es):",
+        "results_count": "{count} possible match(es)",
         "no_org_registered": "(no organization on file)",
 
         # representante.html

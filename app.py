@@ -101,6 +101,9 @@ def index():
     ubicacion = request.args.get("ubicacion", "").strip()
 
     result = search(query) if query else None
+    if result and result["status"] == "candidates":
+        for item in result["results"]:
+            item["autorizado"] = is_currently_authorized(item["record"])
     nearby = nearby_orgs(ubicacion) if ubicacion else None
 
     return render_template(
