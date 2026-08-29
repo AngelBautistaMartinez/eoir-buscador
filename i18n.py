@@ -17,6 +17,7 @@ STRINGS = {
         # site chrome
         "brand": "Buscador de representantes acreditados",
         "subtitle": "DOJ/EOIR — verifique antes de confiar",
+        "nav_home": "Inicio",
         "nav_consejos": "Consejos",
         "meta_description": "Verifique gratis si una persona u organización está acreditada por el DOJ/EOIR para ayudarle con su caso de inmigración. Gratis, sin cuentas, sin datos guardados.",
         "footer_intro": "Esta herramienta usa datos públicos del Departamento de Justicia (DOJ/EOIR). No es un servicio del gobierno ni sustituye asesoría legal.",
@@ -93,6 +94,7 @@ STRINGS = {
         # site chrome
         "brand": "Accredited Representative Search",
         "subtitle": "DOJ/EOIR — verify before you trust",
+        "nav_home": "Home",
         "nav_consejos": "Tips",
         "meta_description": "Check for free whether a person or organization is DOJ/EOIR-accredited to help with an immigration case. Free, no accounts, nothing saved.",
         "footer_intro": "This tool uses public data from the U.S. Department of Justice (DOJ/EOIR). It is not a government service and does not replace legal advice.",

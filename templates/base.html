@@ -21,17 +21,21 @@
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <div class="seal-badge">
+      <a class="seal-badge" href="{{ url_for('index') }}" aria-hidden="true" tabindex="-1">
         <svg class="seal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
           <path d="M12 2.5 4.5 5.5v5.2c0 5 3.2 8.9 7.5 10.3 4.3-1.4 7.5-5.3 7.5-10.3V5.5L12 2.5Z" stroke-linejoin="round"/>
           <path d="m8.5 12.2 2.4 2.4 4.6-4.9" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-      </div>
+      </a>
       <div class="heading-group">
         <a class="brand" href="{{ url_for('index') }}">{{ t('brand') }}</a>
         <p class="subtitle">{{ t('subtitle') }}</p>
       </div>
       <nav class="site-nav">
+        <a class="nav-home" href="{{ url_for('index') }}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 11.5 12 4l8 7.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9a1 1 0 0 0 1 1h3v-5h4v5h3a1 1 0 0 0 1-1v-9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          {{ t('nav_home') }}
+        </a>
         <a href="{{ url_for('consejos') }}">{{ t('nav_consejos') }}</a>
         <span class="lang-switch">
           {% if lang == 'es' %}

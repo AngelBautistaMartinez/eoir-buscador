@@ -127,6 +127,12 @@ a { color: var(--indigo); }
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 .site-nav a:hover { border-bottom-color: #fff; }
+.site-nav a.nav-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.site-nav a.nav-home svg { width: 15px; height: 15px; flex: none; }
 .lang-switch {
   font-size: 0.8rem;
   color: #a7adcf;
