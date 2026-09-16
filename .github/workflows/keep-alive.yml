@@ -1,0 +1,113 @@
+name: Keep Render service awake
+
+# ---------------------------------------------------------------------------
+# WHY THIS IS A LOOP INSTEAD OF A FREQUENT CRON
+#
+# GitHub's scheduled triggers on free runners are unreliable — a "*/10" cron
+# routinely fires 5-20 minutes late under load, and Render sleeps after only
+# 15 minutes idle. Relying on cron precision means the site naps anyway.
+#
+# Instead: cron fires ONCE an hour, and each run pings every 5 minutes for
+# 70 minutes. The 10-minute overlap into the next hour absorbs cron delay,
+# so coverage stays continuous even when the trigger is late.
+#
+# ---------------------------------------------------------------------------
+# COST: ZERO — BUT THIS DEPENDS ON THE REPO BEING PUBLIC.
+#
+# Standard GitHub-hosted runners are free and unmetered for PUBLIC repos,
+# with no minute cap on any plan. This repo is public, so this costs nothing.
+#
+# *** IF YOU EVER MAKE THIS REPO PRIVATE, DELETE THIS WORKFLOW FIRST. ***
+# Private repos get 2,000 free minutes/month. This uses roughly 14,500.
+# You'd blow the cap in about four days. With a payment method on file that
+# bills you; without one, GitHub blocks all your runs. Both are bad.
+# Public repo = free. Private repo = delete this file.
+#
+# ---------------------------------------------------------------------------
+# WHY NOT 24/7
+#
+# Render grants 750 free instance-hours per month per workspace, and a month
+# is ~730 hours. Running 24/7 eats the entire allowance with 20 hours spare,
+# so adding any second free Render service later would suspend both mid-month.
+# This window uses ~240 hours/month and covers the time when someone reading
+# your outreach email would actually click the link.
+#
+# ---------------------------------------------------------------------------
+# SCHEDULE IS IN UTC. 14:00-23:00 UTC, Mon-Fri, is:
+#   7:00am - 5:00pm Pacific during PDT (mid-March to early November)
+#   6:00am - 4:00pm Pacific during PST (November to mid-March)
+# GitHub cron does not follow daylight saving. Shift the hours if it matters.
+# ---------------------------------------------------------------------------
+
+on:
+  schedule:
+    - cron: "0 14-23 * * 1-5"
+  workflow_dispatch:          # run manually from the Actions tab to test
+
+# Never let two runs stack. A new run replaces the old one.
+concurrency:
+  group: keep-alive
+  cancel-in-progress: true
+
+permissions:
+  contents: read              # least privilege; this job needs nothing else
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest    # standard runner — the free, unmetered kind
+    timeout-minutes: 75       # hard stop, just above the 70-minute loop
+
+    steps:
+      - name: Ping every 5 minutes for 70 minutes
+        env:
+          URL: https://eoir-buscador.onrender.com/
+          DURATION_MIN: "70"
+          INTERVAL_SEC: "300"
+        run: |
+          set -uo pipefail     # deliberately NOT -e: one bad ping shouldn't kill the run
+
+          END=$(( $(date +%s) + DURATION_MIN * 60 ))
+          OK=0
+          FAIL=0
+
+          while :; do
+            CODE=$(curl --silent --show-error --location \
+                        --max-time 90 \
+                        --retry 2 --retry-delay 10 \
+                        --user-agent "keep-alive (github actions)" \
+                        --write-out "%{http_code}" \
+                        --output /dev/null \
+                        "$URL" || echo "000")
+
+            if [ "$CODE" -ge 200 ] 2>/dev/null && [ "$CODE" -lt 400 ] 2>/dev/null; then
+              OK=$((OK + 1))
+              echo "$(date -u +%H:%M:%SZ)  up    ($CODE)"
+            else
+              FAIL=$((FAIL + 1))
+              echo "$(date -u +%H:%M:%SZ)  DOWN  ($CODE)"
+            fi
+
+            REMAINING=$(( END - $(date +%s) ))
+            if [ "$REMAINING" -lt "$INTERVAL_SEC" ]; then
+              break
+            fi
+            sleep "$INTERVAL_SEC"
+          done
+
+          echo ""
+          echo "=========================================="
+          echo "  successful pings: $OK"
+          echo "  failed pings:     $FAIL"
+          echo "=========================================="
+
+          # Only fail if EVERY ping failed. A single blip is normal (cold
+          # start, transient network) and shouldn't send you a failure email.
+          # Total failure means the site is genuinely down — worth knowing.
+          if [ "$OK" -eq 0 ]; then
+            echo "::error::Every ping failed. The site appears to be down."
+            exit 1
+          fi
+
+          if [ "$FAIL" -gt 0 ]; then
+            echo "::warning::$FAIL ping(s) failed out of $((OK + FAIL))."
+          fi
