@@ -1,6 +1,6 @@
 {
-  "data_as_of": "2026-09-14",
-  "generated_at": "2026-09-14",
+  "data_as_of": "2026-09-21",
+  "generated_at": "2026-09-21",
   "representatives": [
     {
       "name": "Abasto Revilla, Claudia Mabel",
@@ -840,7 +840,7 @@
       "name_normalized": "ahmed abdikarim mohamed",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-15",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Mid-Minnesota Legal Aid-St. Cloud",
       "org_recognized": "1999-02-09",
@@ -1125,6 +1125,23 @@
       "org_address_match": true
     },
     {
+      "name": "Alcazar, Liza Marie",
+      "name_normalized": "alcazar liza marie",
+      "scope": "FULL",
+      "expiration": "2029-09-17",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "South Texas Pro Bono Asylum Representation Project (ProBAR), a project of the American Bar Assn.",
+      "org_recognized": "2012-01-30",
+      "org_expiration": "2025-07-22",
+      "org_pending_renewal": true,
+      "org_status": "Active",
+      "org_city": "Harlingen",
+      "org_state": "TX",
+      "org_phone": "(956) 365-3775",
+      "org_address_match": true
+    },
+    {
       "name": "Alejandre, Martha Alicia",
       "name_normalized": "alejandre martha alicia",
       "scope": "DHS_ONLY",
@@ -1153,9 +1170,9 @@
       "org_expiration": "2031-01-05",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Berkeley",
+      "org_city": "Concord",
       "org_state": "CA",
-      "org_phone": "(510) 558-7800",
+      "org_phone": "(925) 927-2000",
       "org_address_match": true
     },
     {
@@ -1202,7 +1219,7 @@
       "org": "ECDC African Community Center Arlington",
       "org_recognized": "2013-01-03",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Arlington",
       "org_state": "VA",
@@ -1360,23 +1377,6 @@
       "org_city": "Oakland",
       "org_state": "CA",
       "org_phone": "(510) 768-3100",
-      "org_address_match": true
-    },
-    {
-      "name": "Altamirano, Michael",
-      "name_normalized": "altamirano michael",
-      "scope": "DHS_ONLY",
-      "expiration": "2027-11-22",
-      "pending_renewal": false,
-      "status": "Active",
-      "org": "Ayuda",
-      "org_recognized": "2024-09-18",
-      "org_expiration": "2026-09-18",
-      "org_pending_renewal": false,
-      "org_status": "Active",
-      "org_city": "Washington",
-      "org_state": "DC",
-      "org_phone": "(202) 387-4848",
       "org_address_match": true
     },
     {
@@ -2632,9 +2632,9 @@
       "org_expiration": "2031-01-05",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Berkeley",
+      "org_city": "Concord",
       "org_state": "CA",
-      "org_phone": "(510) 558-7800",
+      "org_phone": "(925) 927-2000",
       "org_address_match": true
     },
     {
@@ -2652,23 +2652,6 @@
       "org_city": "Ridgeland",
       "org_state": "MS",
       "org_phone": "(601) 326-3725",
-      "org_address_match": true
-    },
-    {
-      "name": "Arriola Palma, Blanca Abigail",
-      "name_normalized": "arriola palma blanca abigail",
-      "scope": "DHS_ONLY",
-      "expiration": "2027-09-18",
-      "pending_renewal": false,
-      "status": "Active",
-      "org": "Ayuda",
-      "org_recognized": "2024-09-18",
-      "org_expiration": "2026-09-18",
-      "org_pending_renewal": false,
-      "org_status": "Active",
-      "org_city": "Washington",
-      "org_state": "DC",
-      "org_phone": "(202) 387-4848",
       "org_address_match": true
     },
     {
@@ -2914,7 +2897,7 @@
       "name_normalized": "avila susana alejandra",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-18",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Catholic Charities, Archdiocese of San Antonio, Inc.",
       "org_recognized": "2025-08-27",
@@ -3142,9 +3125,9 @@
       "org_expiration": "2031-01-05",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Berkeley",
+      "org_city": "Concord",
       "org_state": "CA",
-      "org_phone": "(510) 558-7800",
+      "org_phone": "(925) 927-2000",
       "org_address_match": true
     },
     {
@@ -3567,9 +3550,9 @@
       "org_expiration": "2028-10-23",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Reading",
+      "org_city": "Scranton",
       "org_state": "PA",
-      "org_phone": "(610) 370-7296",
+      "org_phone": "(570) 354-2741",
       "org_address_match": true
     },
     {
@@ -3713,7 +3696,7 @@
       "name_normalized": "barragan toriz maria fernanda",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-13",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "World Relief",
       "org_recognized": "2024-09-25",
@@ -3752,7 +3735,7 @@
       "org": "Centro Legal de la Raza",
       "org_recognized": "2011-09-12",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Oakland",
       "org_state": "CA",
@@ -5124,7 +5107,7 @@
       "name_normalized": "bowman kole scott",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-13",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Georgia Asylum and Immigration Network Inc.",
       "org_recognized": "2023-09-29",
@@ -5318,9 +5301,9 @@
       "org_expiration": "2031-01-05",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Berkeley",
+      "org_city": "Concord",
       "org_state": "CA",
-      "org_phone": "(510) 558-7800",
+      "org_phone": "(925) 927-2000",
       "org_address_match": true
     },
     {
@@ -5537,7 +5520,7 @@
       "org": "University of North Carolina at Greensboro",
       "org_recognized": "2014-08-08",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Greensboro",
       "org_state": "NC",
@@ -5906,7 +5889,7 @@
       "name_normalized": "caiazzo sr rosanne",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-19",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Catholic Charities of the Diocese of Raleigh",
       "org_recognized": "2001-08-18",
@@ -6287,10 +6270,10 @@
       "org_expiration": "2026-09-21",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Boston",
-      "org_state": "MA",
-      "org_phone": "(617) 694-5949",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Campbell, Hilda Vanessa",
@@ -6671,7 +6654,7 @@
       "name_normalized": "cardenas tanhya lynnette",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-13",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Legal Services for Children",
       "org_recognized": "2015-06-24",
@@ -6831,9 +6814,9 @@
       "org_expiration": "2030-05-02",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Milwaukee",
+      "org_city": "Waukesha",
       "org_state": "WI",
-      "org_phone": "(414) 269-9952",
+      "org_phone": "(262) 544-9472",
       "org_address_match": true
     },
     {
@@ -7273,26 +7256,9 @@
       "org_expiration": "2030-11-26",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Washington",
-      "org_state": "DC",
-      "org_phone": "(202) 824-8690",
-      "org_address_match": true
-    },
-    {
-      "name": "Cazzol, Giancarla Milenka",
-      "name_normalized": "cazzol giancarla milenka",
-      "scope": "DHS_ONLY",
-      "expiration": "2027-09-18",
-      "pending_renewal": false,
-      "status": "Active",
-      "org": "Ayuda",
-      "org_recognized": "2024-09-18",
-      "org_expiration": "2026-09-18",
-      "org_pending_renewal": false,
-      "org_status": "Active",
-      "org_city": "Washington",
-      "org_state": "DC",
-      "org_phone": "(202) 387-4848",
+      "org_city": "Fresno",
+      "org_state": "CA",
+      "org_phone": "(559) 240-4184",
       "org_address_match": true
     },
     {
@@ -8235,7 +8201,7 @@
       "name_normalized": "cogswell katherine anne",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-14",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Church World Service NC",
       "org_recognized": "2015-09-04",
@@ -8257,7 +8223,7 @@
       "org": "ECDC African Community Center Arlington",
       "org_recognized": "2013-01-03",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Arlington",
       "org_state": "VA",
@@ -8648,7 +8614,7 @@
       "org": "Crisis Intervention Services, Inc. DBA Sierra Community House",
       "org_recognized": "2014-09-08",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Truckee",
       "org_state": "CA",
@@ -8922,9 +8888,9 @@
       "org_expiration": "2031-01-05",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Berkeley",
+      "org_city": "Concord",
       "org_state": "CA",
-      "org_phone": "(510) 558-7800",
+      "org_phone": "(925) 927-2000",
       "org_address_match": true
     },
     {
@@ -9500,10 +9466,10 @@
       "org_expiration": "2026-09-21",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Boston",
-      "org_state": "MA",
-      "org_phone": "(617) 694-5949",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Dang, Lilli Tiet",
@@ -10938,7 +10904,7 @@
       "name_normalized": "drewniak kelsey lynne",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-14",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Journey's End Refugee Services, Inc.",
       "org_recognized": "2009-06-02",
@@ -11266,7 +11232,7 @@
       "org": "ECDC African Community Center Arlington",
       "org_recognized": "2013-01-03",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Arlington",
       "org_state": "VA",
@@ -11285,9 +11251,9 @@
       "org_expiration": "2028-10-23",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Reading",
+      "org_city": "Scranton",
       "org_state": "PA",
-      "org_phone": "(610) 370-7296",
+      "org_phone": "(570) 354-2741",
       "org_address_match": true
     },
     {
@@ -12379,6 +12345,23 @@
       "org_address_match": true
     },
     {
+      "name": "Fernandez, Ivette",
+      "name_normalized": "fernandez ivette",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-09-11",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "La Casa De Don Pedro, Immigration Services Program",
+      "org_recognized": "2000-11-09",
+      "org_expiration": "2025-07-30",
+      "org_pending_renewal": true,
+      "org_status": "Active",
+      "org_city": "Newark",
+      "org_state": "NJ",
+      "org_phone": "(973) 481-4568",
+      "org_address_match": true
+    },
+    {
       "name": "Fernandez, Patricia Lorena",
       "name_normalized": "fernandez patricia lorena",
       "scope": "DHS_ONLY",
@@ -12427,23 +12410,6 @@
       "org_city": "Reedley",
       "org_state": "CA",
       "org_phone": "(559) 638-6911",
-      "org_address_match": true
-    },
-    {
-      "name": "Ferreira, Damaly",
-      "name_normalized": "ferreira damaly",
-      "scope": "DHS_ONLY",
-      "expiration": "2028-01-16",
-      "pending_renewal": false,
-      "status": "Active",
-      "org": "The Ansob Center for Refugees",
-      "org_recognized": "2010-10-08",
-      "org_expiration": "2026-04-03",
-      "org_pending_renewal": true,
-      "org_status": "Active",
-      "org_city": "Astoria",
-      "org_state": "NY",
-      "org_phone": "(718) 278-4303",
       "org_address_match": true
     },
     {
@@ -13141,6 +13107,23 @@
       "org_city": "Indio",
       "org_state": "CA",
       "org_phone": "(760) 200-2002",
+      "org_address_match": true
+    },
+    {
+      "name": "Fozan, Fawad Ahman",
+      "name_normalized": "fozan fawad ahman",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-09-11",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "World Relief",
+      "org_recognized": "2024-09-25",
+      "org_expiration": "2030-09-25",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Towson",
+      "org_state": "MD",
+      "org_phone": "(410) 244-0002",
       "org_address_match": true
     },
     {
@@ -13850,7 +13833,7 @@
       "org": "Centro Legal de la Raza",
       "org_recognized": "2011-09-12",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Oakland",
       "org_state": "CA",
@@ -14158,10 +14141,10 @@
       "org_expiration": "2026-06-02",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Fresno",
+      "org_state": "CA",
+      "org_phone": "(559) 291-5428",
+      "org_address_match": true
     },
     {
       "name": "Garcia Menchaca, Blanca",
@@ -14396,10 +14379,10 @@
       "org_expiration": "2026-06-02",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Fresno",
+      "org_state": "CA",
+      "org_phone": "(559) 291-5428",
+      "org_address_match": true
     },
     {
       "name": "Gaston, Deddi Ivette",
@@ -14991,10 +14974,10 @@
       "org_expiration": "2026-06-02",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Fresno",
+      "org_state": "CA",
+      "org_phone": "(559) 291-5428",
+      "org_address_match": true
     },
     {
       "name": "Gomez, Daysse Maryan",
@@ -17190,6 +17173,23 @@
       "org_address_match": true
     },
     {
+      "name": "Harper, Olivia Ryan",
+      "name_normalized": "harper olivia ryan",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-09-17",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "No More A Stranger Foundation",
+      "org_recognized": "2023-11-16",
+      "org_expiration": "2029-11-09",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Murray",
+      "org_state": "UT",
+      "org_phone": "(801) 938-8390",
+      "org_address_match": true
+    },
+    {
       "name": "Harrington, Danielle Wolf",
       "name_normalized": "harrington danielle wolf",
       "scope": "DHS_ONLY",
@@ -17510,6 +17510,23 @@
       "org_city": "Oklahoma City",
       "org_state": "OK",
       "org_phone": "(405) 684-3247",
+      "org_address_match": true
+    },
+    {
+      "name": "Hedge, Nathan Paul",
+      "name_normalized": "hedge nathan paul",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-09-11",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "World Relief",
+      "org_recognized": "2024-09-25",
+      "org_expiration": "2030-09-25",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Towson",
+      "org_state": "MD",
+      "org_phone": "(410) 244-0002",
       "org_address_match": true
     },
     {
@@ -18210,23 +18227,6 @@
       "org_address_match": false
     },
     {
-      "name": "Herrera Cardona, John Jairo",
-      "name_normalized": "herrera cardona john jairo",
-      "scope": "DHS_ONLY",
-      "expiration": "2028-09-22",
-      "pending_renewal": false,
-      "status": "Active",
-      "org": "Catholic Charities of Oregon",
-      "org_recognized": "2025-05-12",
-      "org_expiration": "2031-05-12",
-      "org_pending_renewal": false,
-      "org_status": "Active",
-      "org_city": "Portland",
-      "org_state": "OR",
-      "org_phone": "(503) 231-4866",
-      "org_address_match": true
-    },
-    {
       "name": "Herrera Huezo, Karla Elizabeth",
       "name_normalized": "herrera huezo karla elizabeth",
       "scope": "DHS_ONLY",
@@ -18340,9 +18340,9 @@
       "org_expiration": "2030-05-02",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Milwaukee",
+      "org_city": "Waukesha",
       "org_state": "WI",
-      "org_phone": "(414) 269-9952",
+      "org_phone": "(262) 544-9472",
       "org_address_match": true
     },
     {
@@ -18406,7 +18406,7 @@
       "org": "University of North Carolina at Greensboro",
       "org_recognized": "2014-08-08",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Greensboro",
       "org_state": "NC",
@@ -19298,6 +19298,23 @@
       "org_address_match": true
     },
     {
+      "name": "Inko-Tariah, Mason Opualapuye",
+      "name_normalized": "inko tariah mason opualapuye",
+      "scope": "FULL",
+      "expiration": "2029-09-17",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "Benevolence Law Center Inc.",
+      "org_recognized": "2026-09-18",
+      "org_expiration": "2028-09-17",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Joppatowne",
+      "org_state": "MD",
+      "org_phone": "(410) 344-3432",
+      "org_address_match": true
+    },
+    {
       "name": "Inkrott, Sister Andrea",
       "name_normalized": "inkrott sister andrea",
       "scope": "DHS_ONLY",
@@ -19846,7 +19863,7 @@
       "name_normalized": "jara ramirez ana lyn",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-13",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "World Relief",
       "org_recognized": "2024-09-25",
@@ -20021,7 +20038,7 @@
       "org": "University of North Carolina at Greensboro",
       "org_recognized": "2014-08-08",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Greensboro",
       "org_state": "NC",
@@ -20383,6 +20400,23 @@
       "org_city": "Los Angeles",
       "org_state": "CA",
       "org_phone": "(213) 977-7500",
+      "org_address_match": true
+    },
+    {
+      "name": "Juarez Jr, Francisco",
+      "name_normalized": "juarez jr francisco",
+      "scope": "FULL",
+      "expiration": "2029-09-11",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "Immigration Counseling Service",
+      "org_recognized": "2025-01-03",
+      "org_expiration": "2031-01-02",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Portland",
+      "org_state": "OR",
+      "org_phone": "(503) 221-1689",
       "org_address_match": true
     },
     {
@@ -21349,9 +21383,9 @@
       "org_expiration": "2031-01-05",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Berkeley",
+      "org_city": "Concord",
       "org_state": "CA",
-      "org_phone": "(510) 558-7800",
+      "org_phone": "(925) 927-2000",
       "org_address_match": true
     },
     {
@@ -21383,9 +21417,9 @@
       "org_expiration": "2030-05-02",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Milwaukee",
+      "org_city": "Waukesha",
       "org_state": "WI",
-      "org_phone": "(414) 269-9952",
+      "org_phone": "(262) 544-9472",
       "org_address_match": true
     },
     {
@@ -21444,7 +21478,7 @@
       "name_normalized": "kushner dominguez kimberly ann",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-19",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Lutheran Community Services Northwest",
       "org_recognized": "1992-01-28",
@@ -21908,7 +21942,7 @@
       "org": "Centro Legal de la Raza",
       "org_recognized": "2011-09-12",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Oakland",
       "org_state": "CA",
@@ -22046,9 +22080,9 @@
       "org_expiration": "2031-01-05",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Berkeley",
+      "org_city": "Concord",
       "org_state": "CA",
-      "org_phone": "(510) 558-7800",
+      "org_phone": "(925) 927-2000",
       "org_address_match": true
     },
     {
@@ -22350,7 +22384,7 @@
       "org": "Crisis Intervention Services, Inc. DBA Sierra Community House",
       "org_recognized": "2014-09-08",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Truckee",
       "org_state": "CA",
@@ -24681,10 +24715,27 @@
       "org_expiration": "2026-06-02",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Fresno",
+      "org_state": "CA",
+      "org_phone": "(559) 291-5428",
+      "org_address_match": true
+    },
+    {
+      "name": "Martinez, Miriam",
+      "name_normalized": "martinez miriam",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-09-11",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "La Casa De Don Pedro, Immigration Services Program",
+      "org_recognized": "2000-11-09",
+      "org_expiration": "2025-07-30",
+      "org_pending_renewal": true,
+      "org_status": "Active",
+      "org_city": "Newark",
+      "org_state": "NJ",
+      "org_phone": "(973) 481-4568",
+      "org_address_match": true
     },
     {
       "name": "Martinez, Rocio",
@@ -24834,10 +24885,10 @@
       "org_expiration": "2026-05-28",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Arroyo Grande",
+      "org_state": "CA",
+      "org_phone": "(805) 221-4319",
+      "org_address_match": true
     },
     {
       "name": "Martinez Rosas, Edna Marisol",
@@ -25718,9 +25769,9 @@
       "org_expiration": "2028-10-23",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Reading",
+      "org_city": "Scranton",
       "org_state": "PA",
-      "org_phone": "(610) 370-7296",
+      "org_phone": "(570) 354-2741",
       "org_address_match": true
     },
     {
@@ -25767,7 +25818,7 @@
       "org": "Worker Justice Center of New York",
       "org_recognized": "2024-09-17",
       "org_expiration": "2026-09-16",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Rochester",
       "org_state": "NY",
@@ -29073,6 +29124,23 @@
       "org_address_match": true
     },
     {
+      "name": "Obando Zuniga, Silvia Elena",
+      "name_normalized": "obando zuniga silvia elena",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-09-11",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "World Relief",
+      "org_recognized": "2024-09-25",
+      "org_expiration": "2030-09-25",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Towson",
+      "org_state": "MD",
+      "org_phone": "(410) 244-0002",
+      "org_address_match": true
+    },
+    {
       "name": "Obbink, Tarin Marie",
       "name_normalized": "obbink tarin marie",
       "scope": "DHS_ONLY",
@@ -29583,6 +29651,23 @@
       "org_address_match": true
     },
     {
+      "name": "Orrego Machuca, Tania Julieta",
+      "name_normalized": "orrego machuca tania julieta",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-09-17",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "La Casa De Amistad Inc.",
+      "org_recognized": "2014-12-19",
+      "org_expiration": "2026-08-14",
+      "org_pending_renewal": true,
+      "org_status": "Active",
+      "org_city": "South Bend",
+      "org_state": "IN",
+      "org_phone": "(574) 233-2120",
+      "org_address_match": true
+    },
+    {
       "name": "Ortega, Adriana",
       "name_normalized": "ortega adriana",
       "scope": "DHS_ONLY",
@@ -29655,7 +29740,7 @@
       "name_normalized": "ortega ulloa samuel giovani",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-19",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "World Relief",
       "org_recognized": "2024-09-25",
@@ -29689,7 +29774,7 @@
       "name_normalized": "ortiz andrea",
       "scope": "FULL",
       "expiration": "2026-09-14",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Catholic Charities of Los Angeles, Inc.",
       "org_recognized": "2025-08-25",
@@ -30051,7 +30136,7 @@
       "org": "Immigrant Hope - Brooklyn, NY",
       "org_recognized": "2011-05-06",
       "org_expiration": "2026-09-17",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Brooklyn",
       "org_state": "NY",
@@ -30284,7 +30369,7 @@
       "name_normalized": "pahua mireya",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-13",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Northern Valley Catholic Social Service, Inc.",
       "org_recognized": "2024-12-09",
@@ -31746,7 +31831,7 @@
       "name_normalized": "pezold sarah joan",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-19",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Santa Fe Dreamers Project dba Contigo Immigrant Justice",
       "org_recognized": "2018-05-04",
@@ -32048,23 +32133,6 @@
       "org_address_match": true
     },
     {
-      "name": "Pineda Berrios, Melanie Pamela",
-      "name_normalized": "pineda berrios melanie pamela",
-      "scope": "DHS_ONLY",
-      "expiration": "2027-09-18",
-      "pending_renewal": false,
-      "status": "Active",
-      "org": "Ayuda",
-      "org_recognized": "2024-09-18",
-      "org_expiration": "2026-09-18",
-      "org_pending_renewal": false,
-      "org_status": "Active",
-      "org_city": "Washington",
-      "org_state": "DC",
-      "org_phone": "(202) 387-4848",
-      "org_address_match": true
-    },
-    {
       "name": "Pineda Cruz, Xunahxi Viniza",
       "name_normalized": "pineda cruz xunahxi viniza",
       "scope": "DHS_ONLY",
@@ -32198,6 +32266,23 @@
       "org_city": "Philadelphia",
       "org_state": "PA",
       "org_phone": "(215) 324-0746",
+      "org_address_match": true
+    },
+    {
+      "name": "Planes Marrero, Gladys",
+      "name_normalized": "planes marrero gladys",
+      "scope": "FULL",
+      "expiration": "2029-09-11",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "Catholic Charities Legal Services, Archdiocese of Miami, Inc.",
+      "org_recognized": "2024-12-18",
+      "org_expiration": "2030-12-17",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Miami",
+      "org_state": "FL",
+      "org_phone": "(305) 373-1073",
       "org_address_match": true
     },
     {
@@ -32348,9 +32433,9 @@
       "org_expiration": "2031-01-05",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Berkeley",
+      "org_city": "Concord",
       "org_state": "CA",
-      "org_phone": "(510) 558-7800",
+      "org_phone": "(925) 927-2000",
       "org_address_match": true
     },
     {
@@ -32521,6 +32606,23 @@
       "org_city": "Portland",
       "org_state": "OR",
       "org_phone": "(503) 922-3042",
+      "org_address_match": true
+    },
+    {
+      "name": "Presnell, Logan Reid",
+      "name_normalized": "presnell logan reid",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-09-11",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "Monarch Immigration Legal Services",
+      "org_recognized": "2015-02-20",
+      "org_expiration": "2027-02-08",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Grand Rapids",
+      "org_state": "MI",
+      "org_phone": "(616) 855-0563",
       "org_address_match": true
     },
     {
@@ -33453,10 +33555,10 @@
       "org_expiration": "2026-06-02",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Fresno",
+      "org_state": "CA",
+      "org_phone": "(559) 291-5428",
+      "org_address_match": true
     },
     {
       "name": "Ramos, Thelma Yvonne",
@@ -33487,10 +33589,10 @@
       "org_expiration": "2026-06-02",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Fresno",
+      "org_state": "CA",
+      "org_phone": "(559) 291-5428",
+      "org_address_match": true
     },
     {
       "name": "Ramos-Garcia, Anahi Jahayra",
@@ -33762,6 +33864,23 @@
       "org_city": "Allston",
       "org_state": "MA",
       "org_phone": "(617) 783-8001",
+      "org_address_match": true
+    },
+    {
+      "name": "Renteria, Bianca Anabell",
+      "name_normalized": "renteria bianca anabell",
+      "scope": "FULL",
+      "expiration": "2029-09-11",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "World Relief",
+      "org_recognized": "2024-09-25",
+      "org_expiration": "2030-09-25",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Towson",
+      "org_state": "MD",
+      "org_phone": "(410) 244-0002",
       "org_address_match": true
     },
     {
@@ -34116,10 +34235,10 @@
       "org_expiration": "2026-06-02",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Fresno",
+      "org_state": "CA",
+      "org_phone": "(559) 291-5428",
+      "org_address_match": true
     },
     {
       "name": "Rincon Echeto, Anapaula",
@@ -34530,23 +34649,6 @@
       "org_address_match": true
     },
     {
-      "name": "Rodney, Melissa Samantha",
-      "name_normalized": "rodney melissa samantha",
-      "scope": "FULL",
-      "expiration": "2027-12-13",
-      "pending_renewal": false,
-      "status": "Active",
-      "org": "Catholic Charities of Oregon",
-      "org_recognized": "2025-05-12",
-      "org_expiration": "2031-05-12",
-      "org_pending_renewal": false,
-      "org_status": "Active",
-      "org_city": "Portland",
-      "org_state": "OR",
-      "org_phone": "(503) 231-4866",
-      "org_address_match": true
-    },
-    {
       "name": "Rodrigues, Yesenia",
       "name_normalized": "rodrigues yesenia",
       "scope": "DHS_ONLY",
@@ -34789,7 +34891,7 @@
       "name_normalized": "rodriguez nicholas antonio",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-14",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Centro Romero",
       "org_recognized": "2025-04-02",
@@ -36037,9 +36139,9 @@
       "org_expiration": "2031-01-05",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Berkeley",
+      "org_city": "Concord",
       "org_state": "CA",
-      "org_phone": "(510) 558-7800",
+      "org_phone": "(925) 927-2000",
       "org_address_match": true
     },
     {
@@ -38461,7 +38563,7 @@
       "name_normalized": "snyder rachael anne",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-15",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "World Relief",
       "org_recognized": "2024-09-25",
@@ -38947,23 +39049,6 @@
       "org_city": "Waltham",
       "org_state": "MA",
       "org_phone": "(617) 955-3552",
-      "org_address_match": true
-    },
-    {
-      "name": "Stam, Wayne Louis",
-      "name_normalized": "stam wayne louis",
-      "scope": "DHS_ONLY",
-      "expiration": "2026-01-09",
-      "pending_renewal": true,
-      "status": "Active",
-      "org": "Immigrant Connection, Inc.",
-      "org_recognized": "2014-12-17",
-      "org_expiration": "2026-09-21",
-      "org_pending_renewal": false,
-      "org_status": "Active",
-      "org_city": "Olathe",
-      "org_state": "KS",
-      "org_phone": "(913) 210-1776",
       "org_address_match": true
     },
     {
@@ -39624,9 +39709,9 @@
       "org_expiration": "2031-01-05",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Berkeley",
+      "org_city": "Concord",
       "org_state": "CA",
-      "org_phone": "(510) 558-7800",
+      "org_phone": "(925) 927-2000",
       "org_address_match": true
     },
     {
@@ -41239,9 +41324,9 @@
       "org_expiration": "2030-05-02",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Milwaukee",
+      "org_city": "Waukesha",
       "org_state": "WI",
-      "org_phone": "(414) 269-9952",
+      "org_phone": "(262) 544-9472",
       "org_address_match": true
     },
     {
@@ -42820,10 +42905,10 @@
       "org_expiration": "2026-05-28",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Arroyo Grande",
+      "org_state": "CA",
+      "org_phone": "(805) 221-4319",
+      "org_address_match": true
     },
     {
       "name": "Walker, Mary Martha",
@@ -42976,6 +43061,23 @@
       "org_city": "Roxbury",
       "org_state": "MA",
       "org_phone": "(617) 445-6000",
+      "org_address_match": true
+    },
+    {
+      "name": "Watkins, Raquel Christine",
+      "name_normalized": "watkins raquel christine",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-09-11",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "World Relief",
+      "org_recognized": "2024-09-25",
+      "org_expiration": "2030-09-25",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Towson",
+      "org_state": "MD",
+      "org_phone": "(410) 244-0002",
       "org_address_match": true
     },
     {
@@ -43625,23 +43727,6 @@
       "org_address_match": true
     },
     {
-      "name": "Xainqur, Charly Mehr",
-      "name_normalized": "xainqur charly mehr",
-      "scope": "DHS_ONLY",
-      "expiration": "2027-09-18",
-      "pending_renewal": false,
-      "status": "Active",
-      "org": "Ayuda",
-      "org_recognized": "2024-09-18",
-      "org_expiration": "2026-09-18",
-      "org_pending_renewal": false,
-      "org_status": "Active",
-      "org_city": "Washington",
-      "org_state": "DC",
-      "org_phone": "(202) 387-4848",
-      "org_address_match": true
-    },
-    {
       "name": "Xu, Vivian J.",
       "name_normalized": "xu vivian j",
       "scope": "DHS_ONLY",
@@ -44054,7 +44139,7 @@
       "name_normalized": "zavala lizbet",
       "scope": "FULL",
       "expiration": "2026-09-15",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Erie Neighborhood House",
       "org_recognized": "2011-06-03",
