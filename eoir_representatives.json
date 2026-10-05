@@ -1,6 +1,6 @@
 {
-  "data_as_of": "2026-09-28",
-  "generated_at": "2026-09-28",
+  "data_as_of": "2026-10-05",
+  "generated_at": "2026-10-05",
   "representatives": [
     {
       "name": "Abasto Revilla, Claudia Mabel",
@@ -235,10 +235,10 @@
       "org_expiration": "2026-05-01",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "Yakima",
-      "org_state": "WA",
-      "org_phone": "(509) 457-5058",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Acosta Gonzalez, Isabel Victoria",
@@ -1391,9 +1391,9 @@
       "org_expiration": "2026-09-18",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "Silver Spring",
-      "org_state": "MD",
-      "org_phone": "(240) 594-0600",
+      "org_city": "Washington",
+      "org_state": "DC",
+      "org_phone": "(202) 387-4848",
       "org_address_match": true
     },
     {
@@ -1629,9 +1629,9 @@
       "org_expiration": "2025-06-17",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "New York",
+      "org_city": "Bronx",
       "org_state": "NY",
-      "org_phone": "(212) 349-6009",
+      "org_phone": "(718) 508-1220",
       "org_address_match": true
     },
     {
@@ -1799,10 +1799,10 @@
       "org_expiration": "2026-10-26",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Brooklyn",
+      "org_state": "NY",
+      "org_phone": "(718) 254-0700",
+      "org_address_match": true
     },
     {
       "name": "Amezquita, Albanydia",
@@ -2462,8 +2462,8 @@
       "org_expiration": "2026-11-20",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Jackson",
-      "org_state": "WY",
+      "org_city": "Driggs",
+      "org_state": "ID",
       "org_phone": "(208) 709-0131",
       "org_address_match": true
     },
@@ -2615,10 +2615,10 @@
       "org_expiration": "2026-05-01",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "Yakima",
-      "org_state": "WA",
-      "org_phone": "(509) 457-5058",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Arreguin, Celeste Claire",
@@ -2700,9 +2700,9 @@
       "org_expiration": "2026-09-18",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "Silver Spring",
-      "org_state": "MD",
-      "org_phone": "(240) 594-0600",
+      "org_city": "Washington",
+      "org_state": "DC",
+      "org_phone": "(202) 387-4848",
       "org_address_match": true
     },
     {
@@ -3601,9 +3601,9 @@
       "org_expiration": "2028-10-23",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Scranton",
+      "org_city": "Reading",
       "org_state": "PA",
-      "org_phone": "(570) 354-2741",
+      "org_phone": "(610) 370-7296",
       "org_address_match": true
     },
     {
@@ -3883,7 +3883,7 @@
       "name_normalized": "basenge carine",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-28",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Kentucky Refugee Ministries, Inc.",
       "org_recognized": "2025-01-31",
@@ -7290,9 +7290,9 @@
       "org_expiration": "2030-11-26",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Fresno",
-      "org_state": "CA",
-      "org_phone": "(559) 240-4184",
+      "org_city": "Washington",
+      "org_state": "DC",
+      "org_phone": "(202) 824-8690",
       "org_address_match": true
     },
     {
@@ -7307,9 +7307,9 @@
       "org_expiration": "2026-09-18",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "Silver Spring",
-      "org_state": "MD",
-      "org_phone": "(240) 594-0600",
+      "org_city": "Washington",
+      "org_state": "DC",
+      "org_phone": "(202) 387-4848",
       "org_address_match": true
     },
     {
@@ -7630,9 +7630,9 @@
       "org_expiration": "2025-06-17",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "New York",
+      "org_city": "Bronx",
       "org_state": "NY",
-      "org_phone": "(212) 349-6009",
+      "org_phone": "(718) 508-1220",
       "org_address_match": true
     },
     {
@@ -9073,7 +9073,7 @@
       "org": "Hartford Public Library",
       "org_recognized": "2013-08-23",
       "org_expiration": "2026-10-02",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Hartford",
       "org_state": "CT",
@@ -9109,10 +9109,10 @@
       "org_expiration": "2030-05-16",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Bronx",
-      "org_state": "NY",
-      "org_phone": "(718) 993-2789",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Crimmins, Megan Shea",
@@ -11302,9 +11302,9 @@
       "org_expiration": "2028-10-23",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Scranton",
+      "org_city": "Reading",
       "org_state": "PA",
-      "org_phone": "(570) 354-2741",
+      "org_phone": "(610) 370-7296",
       "org_address_match": true
     },
     {
@@ -11759,7 +11759,7 @@
       "org": "Family Focus Aurora",
       "org_recognized": "2011-02-23",
       "org_expiration": "2026-10-02",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Aurora",
       "org_state": "IL",
@@ -11914,26 +11914,9 @@
       "org_expiration": "2026-10-26",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
-    },
-    {
-      "name": "Estrada, Martha Patricia",
-      "name_normalized": "estrada martha patricia",
-      "scope": "DHS_ONLY",
-      "expiration": "2026-09-20",
-      "pending_renewal": true,
-      "status": "Active",
-      "org": "Catholic Charities of Central Texas",
-      "org_recognized": "2002-03-28",
-      "org_expiration": "2025-07-30",
-      "org_pending_renewal": true,
-      "org_status": "Active",
-      "org_city": "Austin",
-      "org_state": "TX",
-      "org_phone": "(512) 651-6100",
+      "org_city": "Brooklyn",
+      "org_state": "NY",
+      "org_phone": "(718) 254-0700",
       "org_address_match": true
     },
     {
@@ -12349,7 +12332,7 @@
       "name_normalized": "ferman jesse david",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-28",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "BakerRipley Immigration & Citizenship Program",
       "org_recognized": "2013-05-24",
@@ -12404,8 +12387,8 @@
       "status": "Active",
       "org": "La Casa De Don Pedro, Immigration Services Program",
       "org_recognized": "2000-11-09",
-      "org_expiration": "2025-07-30",
-      "org_pending_renewal": true,
+      "org_expiration": "2032-10-02",
+      "org_pending_renewal": false,
       "org_status": "Active",
       "org_city": "Newark",
       "org_state": "NJ",
@@ -12602,7 +12585,7 @@
     {
       "name": "Figueroa Mendoza, Melissa Itzel",
       "name_normalized": "figueroa mendoza melissa itzel",
-      "scope": "FULL",
+      "scope": "DHS_ONLY",
       "expiration": "2025-08-18",
       "pending_renewal": true,
       "status": "Active",
@@ -12995,7 +12978,7 @@
       "name_normalized": "florez angela patricia",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-29",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Immigration Advocacy & Support Center",
       "org_recognized": "2020-02-21",
@@ -13714,7 +13697,7 @@
       "org": "Family Focus Aurora",
       "org_recognized": "2011-02-23",
       "org_expiration": "2026-10-02",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Aurora",
       "org_state": "IL",
@@ -14158,9 +14141,9 @@
       "org_expiration": "2026-11-20",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Vancouver",
-      "org_state": "WA",
-      "org_phone": "(971) 271-6400",
+      "org_city": "Portland",
+      "org_state": "OR",
+      "org_phone": "(503) 235-1541",
       "org_address_match": true
     },
     {
@@ -14532,10 +14515,10 @@
       "org_expiration": "2030-05-16",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Bronx",
-      "org_state": "NY",
-      "org_phone": "(718) 993-2789",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Ghajar, Gilda",
@@ -16317,10 +16300,10 @@
       "org_expiration": "2030-05-16",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Bronx",
-      "org_state": "NY",
-      "org_phone": "(718) 993-2789",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Guerra, Ismael",
@@ -16429,7 +16412,7 @@
       "name_normalized": "guerrero gonzalez olga patricia",
       "scope": "FULL",
       "expiration": "2026-10-03",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "National Immigrant Justice Center",
       "org_recognized": "1980-11-21",
@@ -17184,9 +17167,9 @@
       "org_expiration": "2025-06-17",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "New York",
+      "org_city": "Bronx",
       "org_state": "NY",
-      "org_phone": "(212) 349-6009",
+      "org_phone": "(718) 508-1220",
       "org_address_match": true
     },
     {
@@ -17332,7 +17315,7 @@
       "expiration": "2028-01-16",
       "pending_renewal": false,
       "status": "Active",
-      "org": "Northern Illinois Justice for Our Neighbors",
+      "org": "Northern Illinois Justice for Our Neighbors DBA Immigration Law and Justice of Northern Illinois",
       "org_recognized": "2025-01-16",
       "org_expiration": "2027-01-16",
       "org_pending_renewal": false,
@@ -18340,10 +18323,10 @@
       "org_expiration": "2026-10-26",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Brooklyn",
+      "org_state": "NY",
+      "org_phone": "(718) 254-0700",
+      "org_address_match": true
     },
     {
       "name": "Herschberger, Brittany Marie",
@@ -18901,9 +18884,9 @@
       "org_expiration": "2026-07-16",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "Asheville",
+      "org_city": "Brevard",
       "org_state": "NC",
-      "org_phone": "(828) 253-0406",
+      "org_phone": "(800) 489-6144",
       "org_address_match": true
     },
     {
@@ -20349,6 +20332,23 @@
       "org_city": "Waukegan",
       "org_state": "IL",
       "org_phone": "(847) 244-0300",
+      "org_address_match": true
+    },
+    {
+      "name": "Jones, Beatriz",
+      "name_normalized": "jones beatriz",
+      "scope": "FULL",
+      "expiration": "2029-10-02",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "South Texas Pro Bono Asylum Representation Project (ProBAR), a project of the American Bar Assn.",
+      "org_recognized": "2012-01-30",
+      "org_expiration": "2025-07-22",
+      "org_pending_renewal": true,
+      "org_status": "Active",
+      "org_city": "Harlingen",
+      "org_state": "TX",
+      "org_phone": "(956) 365-3775",
       "org_address_match": true
     },
     {
@@ -22298,8 +22298,8 @@
       "status": "Active",
       "org": "La Casa De Don Pedro, Immigration Services Program",
       "org_recognized": "2000-11-09",
-      "org_expiration": "2025-07-30",
-      "org_pending_renewal": true,
+      "org_expiration": "2032-10-02",
+      "org_pending_renewal": false,
       "org_status": "Active",
       "org_city": "Newark",
       "org_state": "NJ",
@@ -22471,10 +22471,10 @@
       "org_expiration": "2026-10-26",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Brooklyn",
+      "org_state": "NY",
+      "org_phone": "(718) 254-0700",
+      "org_address_match": true
     },
     {
       "name": "Li, Xiang",
@@ -23015,7 +23015,7 @@
       "org_expiration": "2031-06-17",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Trenton",
+      "org_city": "Hamilton,",
       "org_state": "NJ",
       "org_phone": "(609) 393-4900",
       "org_address_match": true
@@ -24814,8 +24814,8 @@
       "status": "Active",
       "org": "La Casa De Don Pedro, Immigration Services Program",
       "org_recognized": "2000-11-09",
-      "org_expiration": "2025-07-30",
-      "org_pending_renewal": true,
+      "org_expiration": "2032-10-02",
+      "org_pending_renewal": false,
       "org_status": "Active",
       "org_city": "Newark",
       "org_state": "NJ",
@@ -25225,8 +25225,8 @@
       "org_expiration": "2026-11-20",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Jackson",
-      "org_state": "WY",
+      "org_city": "Driggs",
+      "org_state": "ID",
       "org_phone": "(208) 709-0131",
       "org_address_match": true
     },
@@ -25514,8 +25514,8 @@
       "org_expiration": "2026-11-20",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Jackson",
-      "org_state": "WY",
+      "org_city": "Driggs",
+      "org_state": "ID",
       "org_phone": "(208) 709-0131",
       "org_address_match": true
     },
@@ -25854,9 +25854,9 @@
       "org_expiration": "2028-10-23",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Scranton",
+      "org_city": "Reading",
       "org_state": "PA",
-      "org_phone": "(570) 354-2741",
+      "org_phone": "(610) 370-7296",
       "org_address_match": true
     },
     {
@@ -27469,9 +27469,9 @@
       "org_expiration": "2026-11-20",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Vancouver",
-      "org_state": "WA",
-      "org_phone": "(971) 271-6400",
+      "org_city": "Portland",
+      "org_state": "OR",
+      "org_phone": "(503) 235-1541",
       "org_address_match": true
     },
     {
@@ -28285,9 +28285,9 @@
       "org_expiration": "2026-12-23",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Las Cruces",
+      "org_city": "Roswell",
       "org_state": "NM",
-      "org_phone": "(575) 527-0500",
+      "org_phone": "(575) 622-1636",
       "org_address_match": true
     },
     {
@@ -28465,7 +28465,7 @@
       "name_normalized": "needler joshua ryne",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-29",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Immigrant Connection at College Wesleyan Church",
       "org_recognized": "2017-07-21",
@@ -29288,9 +29288,9 @@
       "org_expiration": "2026-11-20",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Vancouver",
-      "org_state": "WA",
-      "org_phone": "(971) 271-6400",
+      "org_city": "Portland",
+      "org_state": "OR",
+      "org_phone": "(503) 235-1541",
       "org_address_match": true
     },
     {
@@ -29432,12 +29432,12 @@
     {
       "name": "Olbert, Dominique Michelle Francoise",
       "name_normalized": "olbert dominique michelle francoise",
-      "scope": "DHS_ONLY",
-      "expiration": "2027-12-27",
+      "scope": "FULL",
+      "expiration": "2029-10-02",
       "pending_renewal": false,
       "status": "Active",
       "org": "Community Response Coalition of Kentucky Inc.",
-      "org_recognized": "2025-01-02",
+      "org_recognized": "2024-12-27",
       "org_expiration": "2026-12-27",
       "org_pending_renewal": false,
       "org_status": "Active",
@@ -30658,7 +30658,7 @@
       "name_normalized": "pardee sarah elizabeth",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-27",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Latino Memphis, Inc.",
       "org_recognized": "2017-04-19",
@@ -31141,10 +31141,10 @@
       "org_expiration": "2026-06-02",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Bronx",
+      "org_state": "NY",
+      "org_phone": "(718) 404-9281",
+      "org_address_match": true
     },
     {
       "name": "Peloso, Kinga A.",
@@ -31804,9 +31804,9 @@
       "org_expiration": "2026-11-20",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Vancouver",
-      "org_state": "WA",
-      "org_phone": "(971) 271-6400",
+      "org_city": "Portland",
+      "org_state": "OR",
+      "org_phone": "(503) 235-1541",
       "org_address_match": true
     },
     {
@@ -31858,6 +31858,23 @@
       "org_city": "Chicago",
       "org_state": "IL",
       "org_phone": "(773) 654-3096",
+      "org_address_match": true
+    },
+    {
+      "name": "Peters, Katherine Ann",
+      "name_normalized": "peters katherine ann",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-10-02",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "No More A Stranger Foundation",
+      "org_recognized": "2023-11-16",
+      "org_expiration": "2029-11-09",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Murray",
+      "org_state": "UT",
+      "org_phone": "(801) 938-8390",
       "org_address_match": true
     },
     {
@@ -32263,9 +32280,9 @@
       "org_expiration": "2026-09-18",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "Silver Spring",
-      "org_state": "MD",
-      "org_phone": "(240) 594-0600",
+      "org_city": "Washington",
+      "org_state": "DC",
+      "org_phone": "(202) 387-4848",
       "org_address_match": true
     },
     {
@@ -32684,7 +32701,7 @@
       "pending_renewal": false,
       "status": "Active",
       "org": "Community Response Coalition of Kentucky Inc.",
-      "org_recognized": "2025-01-02",
+      "org_recognized": "2024-12-27",
       "org_expiration": "2026-12-27",
       "org_pending_renewal": false,
       "org_status": "Active",
@@ -34602,7 +34619,7 @@
       "name_normalized": "rivera william",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-29",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Immigration Advocacy & Support Center",
       "org_recognized": "2020-02-21",
@@ -34677,9 +34694,9 @@
       "org_expiration": "2026-12-23",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Las Cruces",
+      "org_city": "Roswell",
       "org_state": "NM",
-      "org_phone": "(575) 527-0500",
+      "org_phone": "(575) 622-1636",
       "org_address_match": true
     },
     {
@@ -34823,7 +34840,7 @@
       "name_normalized": "rodriguez bertha d",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-27",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Iglesia del Hogar, Centro de Asistencia de Inmigracion",
       "org_recognized": "2005-12-12",
@@ -35510,10 +35527,10 @@
       "org_expiration": "2030-05-16",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Bronx",
-      "org_state": "NY",
-      "org_phone": "(718) 993-2789",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Rosado, Genesis",
@@ -36632,9 +36649,9 @@
       "org_expiration": "2026-11-20",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Vancouver",
-      "org_state": "WA",
-      "org_phone": "(971) 271-6400",
+      "org_city": "Portland",
+      "org_state": "OR",
+      "org_phone": "(503) 235-1541",
       "org_address_match": true
     },
     {
@@ -36965,7 +36982,7 @@
       "name_normalized": "sanchez d alessandro claudia",
       "scope": "FULL",
       "expiration": "2026-09-28",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Central American Resource Center (CARECEN) - Washington, DC Office",
       "org_recognized": "1996-02-23",
@@ -37375,7 +37392,7 @@
       "expiration": "2028-01-16",
       "pending_renewal": false,
       "status": "Active",
-      "org": "Northern Illinois Justice for Our Neighbors",
+      "org": "Northern Illinois Justice for Our Neighbors DBA Immigration Law and Justice of Northern Illinois",
       "org_recognized": "2025-01-16",
       "org_expiration": "2027-01-16",
       "org_pending_renewal": false,
@@ -38274,7 +38291,7 @@
       "name_normalized": "shinwari ayub",
       "scope": "DHS_ONLY",
       "expiration": "2026-10-02",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "Iowa Migrant Movement for Justice",
       "org_recognized": "2023-10-04",
@@ -38859,10 +38876,10 @@
       "org_expiration": "2026-05-01",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "Yakima",
-      "org_state": "WA",
-      "org_phone": "(509) 457-5058",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Solis, Rafael",
@@ -39182,10 +39199,10 @@
       "org_expiration": "2030-05-16",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Bronx",
-      "org_state": "NY",
-      "org_phone": "(718) 993-2789",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Springer, Anna Ruth",
@@ -39229,7 +39246,7 @@
       "pending_renewal": false,
       "status": "Active",
       "org": "Community Response Coalition of Kentucky Inc.",
-      "org_recognized": "2025-01-02",
+      "org_recognized": "2024-12-27",
       "org_expiration": "2026-12-27",
       "org_pending_renewal": false,
       "org_status": "Active",
@@ -39440,6 +39457,23 @@
       "org_city": "Harrisburg",
       "org_state": "PA",
       "org_phone": "(717) 576-3427",
+      "org_address_match": true
+    },
+    {
+      "name": "Stracuzzi Letamendi, Pierina Maria",
+      "name_normalized": "stracuzzi letamendi pierina maria",
+      "scope": "DHS_ONLY",
+      "expiration": "2029-10-02",
+      "pending_renewal": false,
+      "status": "Active",
+      "org": "No More A Stranger Foundation",
+      "org_recognized": "2023-11-16",
+      "org_expiration": "2029-11-09",
+      "org_pending_renewal": false,
+      "org_status": "Active",
+      "org_city": "Murray",
+      "org_state": "UT",
+      "org_phone": "(801) 938-8390",
       "org_address_match": true
     },
     {
@@ -40338,10 +40372,10 @@
       "org_expiration": "2026-10-26",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": null,
-      "org_state": null,
-      "org_phone": null,
-      "org_address_match": false
+      "org_city": "Brooklyn",
+      "org_state": "NY",
+      "org_phone": "(718) 254-0700",
+      "org_address_match": true
     },
     {
       "name": "Thorne, Bethany Mae",
@@ -40574,7 +40608,7 @@
       "org": "Hartford Public Library",
       "org_recognized": "2013-08-23",
       "org_expiration": "2026-10-02",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Hartford",
       "org_state": "CT",
@@ -40659,7 +40693,7 @@
       "org": "Hartford Public Library",
       "org_recognized": "2013-08-23",
       "org_expiration": "2026-10-02",
-      "org_pending_renewal": false,
+      "org_pending_renewal": true,
       "org_status": "Active",
       "org_city": "Hartford",
       "org_state": "CT",
@@ -40746,10 +40780,10 @@
       "org_expiration": "2026-05-01",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "Yakima",
-      "org_state": "WA",
-      "org_phone": "(509) 457-5058",
-      "org_address_match": true
+      "org_city": null,
+      "org_state": null,
+      "org_phone": null,
+      "org_address_match": false
     },
     {
       "name": "Torres, Rogerio",
@@ -42099,7 +42133,7 @@
       "name_normalized": "vasquez diana elizabeth",
       "scope": "DHS_ONLY",
       "expiration": "2026-09-29",
-      "pending_renewal": false,
+      "pending_renewal": true,
       "status": "Active",
       "org": "The Door - A Center of Alternatives",
       "org_recognized": "2020-04-03",
@@ -43925,9 +43959,9 @@
       "org_expiration": "2026-09-18",
       "org_pending_renewal": true,
       "org_status": "Active",
-      "org_city": "Silver Spring",
-      "org_state": "MD",
-      "org_phone": "(240) 594-0600",
+      "org_city": "Washington",
+      "org_state": "DC",
+      "org_phone": "(202) 387-4848",
       "org_address_match": true
     },
     {
@@ -44316,9 +44350,9 @@
       "org_expiration": "2026-12-23",
       "org_pending_renewal": false,
       "org_status": "Active",
-      "org_city": "Las Cruces",
+      "org_city": "Roswell",
       "org_state": "NM",
-      "org_phone": "(575) 527-0500",
+      "org_phone": "(575) 622-1636",
       "org_address_match": true
     },
     {
